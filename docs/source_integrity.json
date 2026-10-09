@@ -1,0 +1,54 @@
+[
+  {
+    "path": "participant/README.md",
+    "sha256": "16660727945e0c31de6e18ed665deb1aa69ee8ce8139ffd28be9eccec149c4ad"
+  },
+  {
+    "path": "participant/classical_worker.py",
+    "sha256": "26b420c1165b1ca67efbda1d596354dbb5e84434db5e0c790cab2faa8e381956"
+  },
+  {
+    "path": "participant/config.json",
+    "sha256": "c9b0f0a234713a6ee07aa0d28964f23239639b34ba6cb41a236a247492aa1057"
+  },
+  {
+    "path": "participant/inference.py",
+    "sha256": "f6274eb9fdc5fae6eb20d99728f6dea565703022b4e08bdd793e252ad226ef8a"
+  },
+  {
+    "path": "participant/official_helpers.py",
+    "sha256": "8d91ecffd58f7c9cd1c46696a74f73db648c88019ad30cd003d4b686d33dfaf9"
+  },
+  {
+    "path": "participant/preflight.py",
+    "sha256": "8c889568286237e7157b07ab669d19ef5ab70616bf1d4977de36a5fdf798d2cf"
+  },
+  {
+    "path": "participant/profile_runtime.py",
+    "sha256": "5032e7b346ebbfdd30e79a6b7f812c611a36ac3bb7d8ca7106450cb1f8177eae"
+  },
+  {
+    "path": "participant/requirements-runtime.txt",
+    "sha256": "b9a92a8d1a94089a6cf6414e928ebc7d260f0118483692aff151f73ce78340c0"
+  },
+  {
+    "path": "participant/start.sh",
+    "sha256": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64"
+  },
+  {
+    "path": "participant/configs/inference_config.json",
+    "sha256": "c9b0f0a234713a6ee07aa0d28964f23239639b34ba6cb41a236a247492aa1057"
+  },
+  {
+    "path": "participant/launch_verified.sh",
+    "sha256": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64"
+  },
+  {
+    "path": "participant/run_inference.py",
+    "sha256": "0a7a11642f2323bd038d38a1bf7976ba5ccf7823377392f33d198f881ac7d016"
+  },
+  {
+    "path": "participant/manifest.json",
+    "sha256": "58b47033127747dd85dc016370781704add1267b49b2a77d794a1c725bed3a0f"
+  }
+]

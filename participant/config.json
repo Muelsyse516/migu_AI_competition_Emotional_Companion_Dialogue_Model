@@ -1,0 +1,35 @@
+{
+  "version": "hybrid-v5-seven-classifier",
+  "base_model": "assets/base",
+  "structured_adapter": "assets/structured-v2",
+  "classical_model": "assets/classical-v1.joblib",
+  "structured_prompt": "你是对话情绪和用户画像标注器。读取完整历史，判断最后一条用户消息的情绪，并提取用户画像。只输出一个JSON对象，不输出解释、回复或Markdown。\n情绪只选一个标签：anger, anxiety, care, disgust, fear, gratitude, helplessness, joy, loneliness, mixed, neutral, pride, relaxed, sadness, shame, surprise。\n画像以用户发言为依据，不把助手的表达风格当作用户风格；结合历史，不凭单次情绪杜撰稳定性格。没有足够证据时允许空数组。只能使用下列标签：\npersonality_traits：agreeable, assertive, casual, conservative, emotionally_stable, extroverted, high_conscientiousness, introverted, open, sensitive\ninterests：art_design, career_development, film_animation, games, music, pets, programming_technology, reading_writing, social, sports_fitness, study_exam, travel_outdoor\nstyle：brief, colloquial, detailed, direct, emoji_user, formal, high_emotional_expression, humorous, indirect, low_emotional_expression, rational\n输出格式：{\"emotion_label\":\"标签\",\"user_profile\":{\"personality_traits\":[],\"interests\":[],\"style\":[]}}\n",
+  "reply_max_tokens": 768,
+  "reply_adapter": "assets/reply-v3",
+  "reply_prompt": "你是一位自然、克制、尊重用户意愿的情感陪伴对话助手。根据完整历史，直接回复最后一条用户发言。只输出给用户的中文回复，不输出JSON、分析或标签。结合用户的具体经历和表达方式，保持对话连贯；用户只想倾诉时先倾听，不强行列建议；不要编造经历或人格特征，不作空泛夸奖，不重复句子。",
+  "reply_repetition_penalty": 1.05,
+  "structured_repetition_penalty": 1.05,
+  "profile_encoder": "profile_assets/bert",
+  "profile_encoder_fields": [
+    "interests"
+  ],
+  "emotion_encoder": null,
+  "emotion_override_threshold": 0.9,
+  "generated_profile_fields": [],
+  "classifier_adapter": "classifier_assets",
+  "classifier_prompt": "结合对话历史，识别最后一条用户发言的主要情绪。不要把助手的语气当作用户情绪。候选情绪：anger, anxiety, care, disgust, fear, gratitude, helplessness, joy, loneliness, mixed, neutral, pride, relaxed, sadness, shame, surprise",
+  "structured_base_model": "seven_assets/base",
+  "backend": "transformers",
+  "model_path": "assets/base",
+  "trust_remote_code": false,
+  "device_map": "auto",
+  "torch_dtype": "bfloat16",
+  "performance_rounds": 100,
+  "hardware_label": "RTX4090-24GB-single",
+  "generation": {
+    "max_new_tokens": 768,
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0
+  }
+}
