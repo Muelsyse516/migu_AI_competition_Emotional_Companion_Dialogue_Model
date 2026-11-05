@@ -8,76 +8,76 @@
     "sha256": "5c79d72f11cc9011ac45fc27dd0a0c38ff9ed0c3156cd9ea1a314179557eb4ad"
   },
   "CHANGELOG.md": {
-    "bytes": 5481,
-    "sha256": "3b3b7e056d00fefdf769bb6cc5fcf8f6a1adcdc0a22ff934f6a242de58cb04a5"
+    "bytes": 5394,
+    "sha256": "445a751c069acf84aa24a739eb5e3369bac07430a0187d65c30b60d3c6a4d5e2"
   },
   "Dockerfile": {
     "bytes": 455,
     "sha256": "be17525ccbb794dd77380f48249c11a207306a6f2edc3f36da735e24e200ab6b"
   },
   "docs/01_技术方案.md": {
-    "bytes": 2411,
-    "sha256": "62b83239848bb72f1f02cb7f75c22546a094523bee1850b3364b95db068ef41c"
+    "bytes": 2380,
+    "sha256": "d65fc909d7224b8d2912f68cd1c782dec353f87d8fdb729f9516c406f2836be2"
   },
   "docs/02_实验记录与取舍.md": {
-    "bytes": 4699,
-    "sha256": "c1cbbaa5a8396778c18d5160b66c406d32aadbc5c238ffe0519b7b50e92ed93e"
+    "bytes": 4642,
+    "sha256": "032fdf714e7be0d6a133560837a05b0f7c666a2777641abcf45ccc7f35d77cd8"
   },
   "docs/03_镜像恢复与提交.md": {
-    "bytes": 2658,
-    "sha256": "ca2a714d84ad2e294c2e1bcf2635530b4d41de82e164e7b6b9147fc00712be39"
+    "bytes": 2617,
+    "sha256": "2336ab903f0a21ea9da60adf82fd9121a39f31151cf056f6f07321784d163b39"
   },
   "docs/04_完整评测与质量边界.md": {
-    "bytes": 1893,
-    "sha256": "e82f3d3cefe05c4bebc74864e09bc0db05b1c43a6d6af420cf3430cc2d1aa2fb"
+    "bytes": 1862,
+    "sha256": "d4e70dff751b44a134589912600ed4e3c40dbfced6b6fe2e8396e15c23a7ef26"
   },
   "docs/05_性能实验汇总.md": {
-    "bytes": 1873,
-    "sha256": "e75e5c9e4e0df1090ea9ef9ca04b8fe8596c31fac9e9f3acaceec3d89fd3934a"
+    "bytes": 1851,
+    "sha256": "9f49cc240abfdb523ecbd6ad40e7a09319a24d614f770263bba10c4151fa00ae"
   },
   "docs/06_日志索引与归档规范.md": {
-    "bytes": 1423,
-    "sha256": "d00c77a77ec2056779c83bc5cf762712498ea3c0eed40930805f6cc2ee34aac1"
+    "bytes": 1405,
+    "sha256": "f76f916b2ea33d1d462bfc3de5e8332164d5d7cbbfca8b68d5029e8a178eda83"
   },
   "docs/history/README.md": {
-    "bytes": 444,
-    "sha256": "bfd2504a7fcb4bb1c9d20070c6fb04b1b595854d214ce1fffb80cf309316ecec"
+    "bytes": 439,
+    "sha256": "529158839a4f8b5949bebd21350e771899acfc309e30de30518b4459f6097155"
   },
   "docs/history/source_integrity.json": {
-    "bytes": 1797,
-    "sha256": "bae14900f18a0f71839897b4015e28fd546f0f947e4d3e7edfa96c90ebbd1221"
+    "bytes": 1744,
+    "sha256": "9075c1a9ba69687740d5f24e8ece84518a44f90ab4eee29c8b1542e20fe7622c"
   },
   "docs/history/官方评分核查与改进基准.md": {
-    "bytes": 8809,
-    "sha256": "27dc538886f23ddf941c17e5f4242bb0f4488d894414a233d4682e0561547515"
+    "bytes": 8741,
+    "sha256": "857cee75a67e6ba570b94661cab15854d83ef019bde51e7f976d025de7e1fbd2"
   },
   "docs/history/技术方案_第五轮.md": {
-    "bytes": 3563,
-    "sha256": "62a946046732ce21474128081dcb19de57223bbe4331ea7c8a361bfedca5cde7"
+    "bytes": 3532,
+    "sha256": "86252bfefd3dc788e92462c2bc732f3abe5f6016700e559261cfdc87a49ff9dc"
   },
   "docs/history/模型对比原始数据.json": {
     "bytes": 34188,
     "sha256": "ffd1e9bd58b3e523086d46d038b83ccde1ae86340dd2727487e95340df2e9ea2"
   },
   "docs/history/第一轮微调诊断.md": {
-    "bytes": 2432,
-    "sha256": "527ccdea7258d25b2ecccbaea36ede18a440c964a0625d604fe384b041d8efd9"
+    "bytes": 2393,
+    "sha256": "3894b6864c94348aaf0392b8a9f852290f49080067a8834ae34b7ac0624a3be6"
   },
   "docs/history/第三轮迭代报告.md": {
-    "bytes": 5820,
-    "sha256": "a679236a39ac1933b0b456f00945dbdcec81e0711d2f859d52728301d0d4e520"
+    "bytes": 5772,
+    "sha256": "e975a8c1e4d58e1ac156e0548b7c3f807fb37c0492b871954b8ecda0964f46bd"
   },
   "docs/history/第二轮实验报告.md": {
-    "bytes": 4803,
-    "sha256": "97a71686f0db982a310cd797f0d5c46339874842a39ae94b2bcad3d016ed3b19"
+    "bytes": 4743,
+    "sha256": "1865907e90ae5d39be7763d103fd86a102d9731e3921c15a17f849422950e90c"
   },
   "docs/history/第四轮实验记录.md": {
-    "bytes": 18214,
-    "sha256": "82644e56ebc39573ad920addd734177acd20ae5df89f4268b1571240a7b05d1c"
+    "bytes": 18071,
+    "sha256": "b92cb0ed3d28ff04b7fb397b7d128cbb6d6524718e2defd2803d3fbfa0cfe783"
   },
   "docs/history/组员汇报_原始模型与最优方案对比.md": {
-    "bytes": 5414,
-    "sha256": "dd514acb5fbed546356e7d07d7ac31731a9f8eeb9ccf5c69e161e7190e3dca27"
+    "bytes": 5343,
+    "sha256": "ff7dce5477afcb99613475b85fd5236ee4c2e59c60a27741c3921aa4765f05b2"
   },
   "participant/classical_worker.py": {
     "bytes": 1896,
@@ -116,8 +116,8 @@
     "sha256": "1d585ded81159f7c25d5f47285d0050ad80703bc0ad7320db5ef3e8240b0c31e"
   },
   "participant/README.md": {
-    "bytes": 215,
-    "sha256": "8f1676d1ef7b1df5781fe5f199cc47d781e57f6691a81a54d36d4ea505b005ba"
+    "bytes": 212,
+    "sha256": "bc36d7cf3b2d3f2fae6cada9319171d6cb750e552933ba1775594b53624283ce"
   },
   "participant/requirements-runtime.txt": {
     "bytes": 112,
@@ -132,24 +132,24 @@
     "sha256": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64"
   },
   "README.md": {
-    "bytes": 2148,
-    "sha256": "84620e52c8d5fa83ebd117f822277e68fdaf092a70460869649e990cf23e14ce"
+    "bytes": 2116,
+    "sha256": "d9fccdead1dfa47f3fc55fbe451f3614d1f61d3b240ba9c72d217b82684318a9"
   },
   "release/asset-manifest.json": {
     "bytes": 660909,
     "sha256": "b5fd299d092a19b925ab7e5619dada274bbd6db235bf849cd486ef68f40b0e01"
   },
   "release/fulltest-metrics.json": {
-    "bytes": 7417,
-    "sha256": "c055c2594dffa503b1d5bdef18b88972e7d1662c3697264c986616b89ff5c048"
+    "bytes": 7090,
+    "sha256": "cbe0e7950659e447b65b48ac5729842b7169e91f5fda6e31345bfb4704680669"
   },
   "release/IMAGE_SHA256SUMS": {
     "bytes": 95,
     "sha256": "7547459a1d79f37ccfbe7a26bac471cc3216e111b16f60b33ed473035620fd0a"
   },
   "release/nf4-screen-summary.json": {
-    "bytes": 206,
-    "sha256": "bc9491d541feaea5a43b7573492753de6c6f886301c6bc950851b27e438edb16"
+    "bytes": 199,
+    "sha256": "8d631341f01fce764b8decf63af2e8b07428b0ad8e41eeb6ddb242bb0b0b953b"
   },
   "release/raw-evidence-index.json": {
     "bytes": 251269,
@@ -160,8 +160,8 @@
     "sha256": "ff755efe23849eea9c51d9a8339c8981a03617b941ea1bca6b075c2afc85db8d"
   },
   "release/research-evidence-index.json": {
-    "bytes": 347692,
-    "sha256": "2d1ae0f44a3c551ff81319a92fc1d8ea7e3495077ffb003b346fe2e0d02f450f"
+    "bytes": 340098,
+    "sha256": "85fea3cbf6455e2c466a1d30fcd8f48894c571983c3f6dfb4d0c0a39abbfaaaf"
   },
   "release/restore-image.py": {
     "bytes": 1787,
@@ -172,8 +172,8 @@
     "sha256": "8d9a93369712f5ceea0c352efc1b37c1eaf9f5e5d07dbbad3aa1f5b3ef7b503f"
   },
   "release/source-integrity.json": {
-    "bytes": 1102,
-    "sha256": "f6e26dc1016ac79e7346a00a73d816e6101b263e079ef946e03358f8412671f1"
+    "bytes": 1089,
+    "sha256": "25e25035dce3ef34fc8e453807e7321f162346a58bd9a85ab1a7bd8413340bb8"
   },
   "training/emotion_qwen_7b_v2.py": {
     "bytes": 10226,
