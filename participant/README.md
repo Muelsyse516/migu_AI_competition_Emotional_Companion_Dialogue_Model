@@ -1,6 +1,3 @@
-V5 verified pipeline, official layout compatibility repair 2026-10-08.
-Canonical configuration: configs/inference_config.json.
-Entry: bash /root/participant/start.sh TEST_FILE RESULT_DIR.
-Compatibility Python entry: run_inference.py dispatches launch_verified.sh.
-All model assets use paths relative to participant; no network downloads.
-Official execution failure fix requires platform retest; local static checks alone do not confirm official success.
+# 推理代码
+
+本目录代码与已验证镜像相同。模型及离线依赖在Release镜像中；克隆本目录不能直接运行。恢复、运行和提交步骤见上级docs/03_镜像恢复与提交.md。

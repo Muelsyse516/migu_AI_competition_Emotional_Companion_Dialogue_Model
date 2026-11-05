@@ -26,7 +26,7 @@ cpu_ms = json.loads((scratch/'cpu_timing.json').read_text())['inference_ms'] / l
 base = str(ROOT / config['base_model'])
 tokenizer = AutoTokenizer.from_pretrained(base, local_files_only=True)
 def load(adapter=None, model_base=None):
-    model = AutoModelForCausalLM.from_pretrained(model_base or base, local_files_only=True, dtype=torch.bfloat16, attn_implementation='sdpa')
+    model = AutoModelForCausalLM.from_pretrained(model_base or base, local_files_only=True, dtype=torch.float16, attn_implementation='sdpa')
     if adapter:
         model = PeftModel.from_pretrained(model, str(ROOT/adapter), local_files_only=True).merge_and_unload()
     model.config.use_cache = True
@@ -36,8 +36,8 @@ structured_tokenizer = AutoTokenizer.from_pretrained(structured_base,local_files
 def normalize_head_input(module,args):
     x=args[0].float()
     return ((x*torch.rsqrt(x.square().mean(-1,keepdim=True).clamp_min(1e-8))).to(module.weight.dtype),)
-quant=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type='nf4',bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.bfloat16,llm_int8_skip_modules=['score'])
-structured=AutoModelForSequenceClassification.from_pretrained(structured_base,num_labels=16,local_files_only=True,dtype=torch.bfloat16,attn_implementation='sdpa',quantization_config=quant,device_map={'':0})
+quant=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type='nf4',bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.float16,llm_int8_skip_modules=['score'])
+structured=AutoModelForSequenceClassification.from_pretrained(structured_base,num_labels=16,local_files_only=True,dtype=torch.float16,attn_implementation='sdpa',quantization_config=quant,device_map={'':0})
 structured.config.pad_token_id=structured_tokenizer.eos_token_id
 structured.score.register_forward_pre_hook(normalize_head_input)
 structured=prepare_model_for_kbit_training(structured,use_gradient_checkpointing=False)
@@ -65,7 +65,8 @@ with (output/'submission.jsonl').open('w', encoding='utf-8') as handle, (scratch
         ids = structured_tokenizer.apply_chat_template([{'role':'system','content':config['classifier_prompt']},{'role':'user','content':history}],tokenize=True,add_generation_prompt=True)
         if len(ids)>2048:ids=ids[:256]+ids[-1792:]
         inp=torch.tensor([ids],device='cuda')
-        with torch.inference_mode(), torch.autocast('cuda',dtype=torch.bfloat16):logits=structured(input_ids=inp,attention_mask=torch.ones_like(inp)).logits
+        with torch.inference_mode(), torch.autocast('cuda',dtype=torch.float16):logits=structured(input_ids=inp,attention_mask=torch.ones_like(inp)).logits
+        if not torch.isfinite(logits).all(): raise RuntimeError('Non-finite emotion logits under FP16')
         emotion=sorted(official.EMOTIONS)[int(logits.argmax(-1).item())]
         labels={'emotion_label':emotion,'user_profile':cpu[sample['id']]['user_profile']}
         raw_labels=json.dumps(labels,ensure_ascii=False)

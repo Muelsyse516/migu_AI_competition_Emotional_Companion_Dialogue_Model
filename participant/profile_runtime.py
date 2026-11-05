@@ -25,7 +25,7 @@ class ProfileEncoder:
         # Padding reproduces the development experiment's input construction.
         mask = [1] * len(ids) + [0] * (512 - len(ids))
         ids += [tok.pad_token_id] * (512 - len(ids))
-        with torch.inference_mode(), torch.autocast('cuda', dtype=torch.bfloat16):
+        with torch.inference_mode(), torch.autocast('cuda', dtype=torch.float16):
             logits = self.model(
                 input_ids=torch.tensor([ids], device='cuda'),
                 attention_mask=torch.tensor([mask], device='cuda'),
@@ -47,7 +47,7 @@ class EmotionEncoder(ProfileEncoder):
         ids = [tok.cls_token_id] + ids + [tok.sep_token_id]
         mask = [1] * len(ids) + [0] * (512 - len(ids))
         ids += [tok.pad_token_id] * (512 - len(ids))
-        with torch.inference_mode(), torch.autocast('cuda', dtype=torch.bfloat16):
+        with torch.inference_mode(), torch.autocast('cuda', dtype=torch.float16):
             logits = self.model(
                 input_ids=torch.tensor([ids], device='cuda'),
                 attention_mask=torch.tensor([mask], device='cuda'),

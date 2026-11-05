@@ -1,17 +1,9 @@
 {
-  "version": "hybrid-v5-seven-classifier-official-layout-fixed",
+  "version": "hybrid-v5.3-style-b008",
   "files": {
     "README.md": {
-      "bytes": 454,
-      "sha256": "16660727945e0c31de6e18ed665deb1aa69ee8ce8139ffd28be9eccec149c4ad"
-    },
-    "assets/base/.cache/huggingface/.gitignore": {
-      "bytes": 1,
-      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
-    },
-    "assets/base/.cache/huggingface/download/Dr_lZJDwE1cnGAQMwA77jJEQIk8=.a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d.incomplete": {
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "bytes": 379,
+      "sha256": "75ef606d12cc511b2dd74bb9b93171b7195fb4d88fd8b0d0c8f173114e8c24f9"
     },
     "assets/base/.msc": {
       "bytes": 892,
@@ -49,9 +41,17 @@
       "bytes": 3968658944,
       "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
     },
+    "assets/base/model-00001-of-00002.safetensors.ranges.json": {
+      "bytes": 2575,
+      "sha256": "790ae1a1432b2cfe09af6a0801d3b0bf0e7025fa9203b5b5c1c54e4a849cc8bf"
+    },
     "assets/base/model-00002-of-00002.safetensors": {
       "bytes": 2203268048,
       "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+    },
+    "assets/base/model-00002-of-00002.safetensors.ranges.json": {
+      "bytes": 1249,
+      "sha256": "3e07255cbffa5cf8577aba431b8069f58ae6272aa068ddff45441c32eb1c8e20"
     },
     "assets/base/model.safetensors.index.json": {
       "bytes": 35581,
@@ -69,10 +69,6 @@
       "bytes": 2776833,
       "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
     },
-    "assets/classical-v1.joblib": {
-      "bytes": 69426344,
-      "sha256": "8554d80f82b342ee72b3ffb958dae6ae8b3914c86d7a51bba9c8f88c606ab7cd"
-    },
     "assets/reply-v3/adapter_config.json": {
       "bytes": 951,
       "sha256": "fdfdf2297d3cf28d6b4db595d5c5a07f7231fc91407becaee7f055bbf80cae3c"
@@ -89,9 +85,13 @@
       "bytes": 119801528,
       "sha256": "b6c3f7e1efb455498fae6b5c30d2943c2b44c4133140a35cc49b96fac39bbdea"
     },
+    "candidate_assets/classical-v5.3-style-b008-lean.joblib": {
+      "bytes": 66411936,
+      "sha256": "5255e6c2ab1afdac78e6d4870ccd3a22ce7418a530d8eed703cbcd183d555498"
+    },
     "classical_worker.py": {
-      "bytes": 1328,
-      "sha256": "26b420c1165b1ca67efbda1d596354dbb5e84434db5e0c790cab2faa8e381956"
+      "bytes": 1856,
+      "sha256": "fea630672535d26fca48a4902991982bb064733f9eebe48bb5780efb7a7c9082"
     },
     "classifier_assets/adapter_config.json": {
       "bytes": 1024,
@@ -102,12 +102,20 @@
       "sha256": "67a9fd7838fb10f650f24075047b39758004beff0e78ff0168cda9a7246eeacb"
     },
     "config.json": {
-      "bytes": 2842,
-      "sha256": "c9b0f0a234713a6ee07aa0d28964f23239639b34ba6cb41a236a247492aa1057"
+      "bytes": 2864,
+      "sha256": "df3424c2c2afc2f28a7391732340f0d36eaa101171213936548cc7264e5cebc7"
+    },
+    "configs/inference_config.json": {
+      "bytes": 2864,
+      "sha256": "df3424c2c2afc2f28a7391732340f0d36eaa101171213936548cc7264e5cebc7"
     },
     "inference.py": {
-      "bytes": 9989,
-      "sha256": "f6274eb9fdc5fae6eb20d99728f6dea565703022b4e08bdd793e252ad226ef8a"
+      "bytes": 10089,
+      "sha256": "7bbb0ef8c52dac680221fbcc71b216119cb759193dcdbd48305cdacdae0e1beb"
+    },
+    "launch_verified.sh": {
+      "bytes": 1148,
+      "sha256": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64"
     },
     "official_helpers.py": {
       "bytes": 19467,
@@ -178,12 +186,16 @@
       "sha256": "1c441dfe412d9d7e47c960029a48a0159c23a38a9ab41b465d90fb1f520d4ced"
     },
     "profile_runtime.py": {
-      "bytes": 2884,
-      "sha256": "5032e7b346ebbfdd30e79a6b7f812c611a36ac3bb7d8ca7106450cb1f8177eae"
+      "bytes": 2882,
+      "sha256": "1d585ded81159f7c25d5f47285d0050ad80703bc0ad7320db5ef3e8240b0c31e"
     },
     "requirements-runtime.txt": {
       "bytes": 112,
       "sha256": "b9a92a8d1a94089a6cf6414e928ebc7d260f0118483692aff151f73ce78340c0"
+    },
+    "run_inference.py": {
+      "bytes": 881,
+      "sha256": "0a7a11642f2323bd038d38a1bf7976ba5ccf7823377392f33d198f881ac7d016"
     },
     "runtime_vendor/_yaml/__init__.py": {
       "bytes": 1402,
@@ -2609,17 +2621,33 @@
       "bytes": 3945441440,
       "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
     },
+    "seven_assets/base/model-00001-of-00004.safetensors.ranges.json": {
+      "bytes": 2507,
+      "sha256": "7535be01f360325c42a8327ca7d591137173bbd52ce2c7fdce646455787d3933"
+    },
     "seven_assets/base/model-00002-of-00004.safetensors": {
       "bytes": 3864726352,
       "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+    },
+    "seven_assets/base/model-00002-of-00004.safetensors.ranges.json": {
+      "bytes": 2426,
+      "sha256": "3a71d5beaab3a9f6031710c62490cfc7b98de1eb9c4116edcc4e0b872fc8691a"
     },
     "seven_assets/base/model-00003-of-00004.safetensors": {
       "bytes": 3864726424,
       "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
     },
+    "seven_assets/base/model-00003-of-00004.safetensors.ranges.json": {
+      "bytes": 2724,
+      "sha256": "9973bb1182e9028799d3815ae1bc8059c2f7750a2d45e77fdc22cf53675cb6bd"
+    },
     "seven_assets/base/model-00004-of-00004.safetensors": {
       "bytes": 3556377672,
       "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+    },
+    "seven_assets/base/model-00004-of-00004.safetensors.ranges.json": {
+      "bytes": 2496,
+      "sha256": "b90c3392e7781e0ad8b1865dcec228309bf54031df4e070d6820b75e55b1ea7d"
     },
     "seven_assets/base/model.safetensors.index.json": {
       "bytes": 27752,
@@ -16544,18 +16572,15 @@
     "vendor/threadpoolctl.py": {
       "bytes": 67710,
       "sha256": "e5f119e394193e206655bec4b993ef0bb40b0fbb2f22c92bd5b2d70a622bb518"
-    },
-    "configs/inference_config.json": {
-      "bytes": 2842,
-      "sha256": "c9b0f0a234713a6ee07aa0d28964f23239639b34ba6cb41a236a247492aa1057"
-    },
-    "launch_verified.sh": {
-      "bytes": 1148,
-      "sha256": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64"
-    },
-    "run_inference.py": {
-      "bytes": 881,
-      "sha256": "0a7a11642f2323bd038d38a1bf7976ba5ccf7823377392f33d198f881ac7d016"
     }
-  }
+  },
+  "dependencies": {
+    "torch": "2.6.0+cu118",
+    "transformers": "4.57.6",
+    "accelerate": "1.15.0",
+    "peft": "0.17.1",
+    "bitsandbytes": "0.48.2",
+    "huggingface-hub": "0.36.2"
+  },
+  "scope": "B010 isolated candidate; not the formal V5 directory and not an official Docker image"
 }

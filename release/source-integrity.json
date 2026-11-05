@@ -1,0 +1,14 @@
+{
+  "classical_worker.py": "4be177a0747fd9088c21a0f13512076bd6eb12971a4a2b776a16bbec76c4eb8b",
+  "config.json": "df3424c2c2afc2f28a7391732340f0d36eaa101171213936548cc7264e5cebc7",
+  "inference.py": "7bbb0ef8c52dac680221fbcc71b216119cb759193dcdbd48305cdacdae0e1beb",
+  "launch_verified.sh": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64",
+  "manifest.json": "f17f2b0472df184e42d5d6271c5b6be75f2f09e08060026cdf27a2624abf23bf",
+  "official_helpers.py": "8d91ecffd58f7c9cd1c46696a74f73db648c88019ad30cd003d4b686d33dfaf9",
+  "preflight.py": "8c889568286237e7157b07ab669d19ef5ab70616bf1d4977de36a5fdf798d2cf",
+  "profile_runtime.py": "1d585ded81159f7c25d5f47285d0050ad80703bc0ad7320db5ef3e8240b0c31e",
+  "requirements-runtime.txt": "b9a92a8d1a94089a6cf6414e928ebc7d260f0118483692aff151f73ce78340c0",
+  "run_inference.py": "0a7a11642f2323bd038d38a1bf7976ba5ccf7823377392f33d198f881ac7d016",
+  "start.sh": "949aa57a55f7081721c3dfea6c49dad08a4775f2a6ca5f3d2b2346a485380b64",
+  "configs/inference_config.json": "df3424c2c2afc2f28a7391732340f0d36eaa101171213936548cc7264e5cebc7"
+}

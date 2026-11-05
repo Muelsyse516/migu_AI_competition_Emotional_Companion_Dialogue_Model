@@ -1,0 +1,327 @@
+{
+  "official_total_score": null,
+  "note": "Local diagnostics; public rules do not establish profile matching, reply aggregation or latency score conversion.",
+  "samples": 524,
+  "missing_ids": [],
+  "extra_ids": [],
+  "invalid_samples": 0,
+  "issues": [],
+  "emotion_accuracy": 0.8015267175572519,
+  "profiles": {
+    "personality_traits": {
+      "set_exact_accuracy_proxy": 0.6259541984732825,
+      "binary_label_accuracy_proxy": 0.9555343511450382,
+      "micro_precision": 0.4840764331210191,
+      "micro_recall": 0.3333333333333333,
+      "micro_f1": 0.3948051948051948,
+      "invalid": 0,
+      "valid_empty_predictions": 390,
+      "nonempty_gold_count": 181,
+      "nonempty_gold_exact": 37
+    },
+    "interests": {
+      "set_exact_accuracy_proxy": 0.8625954198473282,
+      "binary_label_accuracy_proxy": 0.9883905852417303,
+      "micro_precision": 0.6910569105691057,
+      "micro_recall": 0.7083333333333334,
+      "micro_f1": 0.6995884773662552,
+      "invalid": 0,
+      "valid_empty_predictions": 401,
+      "nonempty_gold_count": 113,
+      "nonempty_gold_exact": 78
+    },
+    "style": {
+      "set_exact_accuracy_proxy": 0.5324427480916031,
+      "binary_label_accuracy_proxy": 0.9448299791811242,
+      "micro_precision": 0.5053191489361702,
+      "micro_recall": 0.296875,
+      "micro_f1": 0.37401574803149606,
+      "invalid": 0,
+      "valid_empty_predictions": 347,
+      "nonempty_gold_count": 263,
+      "nonempty_gold_exact": 68
+    }
+  },
+  "profile_dimension_mean_set_exact_proxy": 0.6736641221374047,
+  "emotion_confusion": [
+    {
+      "gold": "mixed",
+      "predicted": "anxiety",
+      "count": 13
+    },
+    {
+      "gold": "relaxed",
+      "predicted": "anxiety",
+      "count": 7
+    },
+    {
+      "gold": "mixed",
+      "predicted": "relaxed",
+      "count": 7
+    },
+    {
+      "gold": "fear",
+      "predicted": "anxiety",
+      "count": 6
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "relaxed",
+      "count": 5
+    },
+    {
+      "gold": "sadness",
+      "predicted": "relaxed",
+      "count": 4
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "mixed",
+      "count": 3
+    },
+    {
+      "gold": "anger",
+      "predicted": "anxiety",
+      "count": 3
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "sadness",
+      "count": 2
+    },
+    {
+      "gold": "pride",
+      "predicted": "relaxed",
+      "count": 2
+    },
+    {
+      "gold": "mixed",
+      "predicted": "anger",
+      "count": 2
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "shame",
+      "count": 2
+    },
+    {
+      "gold": "relaxed",
+      "predicted": "neutral",
+      "count": 2
+    },
+    {
+      "gold": "gratitude",
+      "predicted": "relaxed",
+      "count": 2
+    },
+    {
+      "gold": "loneliness",
+      "predicted": "sadness",
+      "count": 2
+    },
+    {
+      "gold": "neutral",
+      "predicted": "anxiety",
+      "count": 2
+    },
+    {
+      "gold": "care",
+      "predicted": "anxiety",
+      "count": 2
+    },
+    {
+      "gold": "gratitude",
+      "predicted": "anxiety",
+      "count": 2
+    },
+    {
+      "gold": "neutral",
+      "predicted": "relaxed",
+      "count": 2
+    },
+    {
+      "gold": "neutral",
+      "predicted": "mixed",
+      "count": 2
+    },
+    {
+      "gold": "mixed",
+      "predicted": "neutral",
+      "count": 2
+    },
+    {
+      "gold": "helplessness",
+      "predicted": "anxiety",
+      "count": 2
+    },
+    {
+      "gold": "loneliness",
+      "predicted": "anxiety",
+      "count": 2
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "anger",
+      "count": 2
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "fear",
+      "count": 2
+    },
+    {
+      "gold": "mixed",
+      "predicted": "sadness",
+      "count": 1
+    },
+    {
+      "gold": "sadness",
+      "predicted": "helplessness",
+      "count": 1
+    },
+    {
+      "gold": "mixed",
+      "predicted": "shame",
+      "count": 1
+    },
+    {
+      "gold": "mixed",
+      "predicted": "pride",
+      "count": 1
+    },
+    {
+      "gold": "joy",
+      "predicted": "relaxed",
+      "count": 1
+    },
+    {
+      "gold": "mixed",
+      "predicted": "helplessness",
+      "count": 1
+    },
+    {
+      "gold": "sadness",
+      "predicted": "shame",
+      "count": 1
+    },
+    {
+      "gold": "care",
+      "predicted": "neutral",
+      "count": 1
+    },
+    {
+      "gold": "fear",
+      "predicted": "mixed",
+      "count": 1
+    },
+    {
+      "gold": "loneliness",
+      "predicted": "helplessness",
+      "count": 1
+    },
+    {
+      "gold": "disgust",
+      "predicted": "shame",
+      "count": 1
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "helplessness",
+      "count": 1
+    },
+    {
+      "gold": "loneliness",
+      "predicted": "relaxed",
+      "count": 1
+    },
+    {
+      "gold": "shame",
+      "predicted": "anxiety",
+      "count": 1
+    },
+    {
+      "gold": "relaxed",
+      "predicted": "mixed",
+      "count": 1
+    },
+    {
+      "gold": "sadness",
+      "predicted": "mixed",
+      "count": 1
+    },
+    {
+      "gold": "sadness",
+      "predicted": "anxiety",
+      "count": 1
+    },
+    {
+      "gold": "anger",
+      "predicted": "mixed",
+      "count": 1
+    },
+    {
+      "gold": "anxiety",
+      "predicted": "neutral",
+      "count": 1
+    },
+    {
+      "gold": "helplessness",
+      "predicted": "sadness",
+      "count": 1
+    },
+    {
+      "gold": "loneliness",
+      "predicted": "neutral",
+      "count": 1
+    },
+    {
+      "gold": "sadness",
+      "predicted": "loneliness",
+      "count": 1
+    }
+  ],
+  "reply": {
+    "tokenization": "non-whitespace Unicode characters; punctuation/case retained",
+    "corpus_bleu4_unsmoothed": {
+      "score_0_1": 0.10416508622905689,
+      "brevity_penalty": 1.0,
+      "precision_1_to_4": [
+        0.43099627401797236,
+        0.1543589617901522,
+        0.06027529046103752,
+        0.029359187625692083
+      ],
+      "hypothesis_chars": 82126,
+      "reference_chars": 75944
+    },
+    "mean_character_rouge_l_f1": 0.25124968057552244,
+    "bert_score": 0.671050013249157,
+    "bert_score_status": "measured_local_proxy",
+    "official_20_point_score": null,
+    "bert_settings": {
+      "model": "bert-base-chinese",
+      "layers": 9,
+      "idf": false,
+      "rescale_with_baseline": false,
+      "signature": "bert-base-chinese_L9_no-idf_version=0.3.12(hug_trans=4.57.6)",
+      "empty_reply_score": 0
+    }
+  },
+  "provenance": {
+    "predictions": {
+      "sha256": "6744c7cd06b381236005192881d596bc2b907523c49db051438f38da905518b3"
+    },
+    "answers": {
+      "sha256": "0c9222d141213b4fbffb35ea7bb7d72f19e3b43586b3b3555feabc48d71569fc"
+    }
+  },
+  "performance": {
+    "linked_to_this_submission": true,
+    "measured_rounds": 100,
+    "complete_first_100": true,
+    "mean_ms": 5231.692401170731,
+    "p95_ms": 16909.792535007,
+    "scope": "emotion classification + reply generation + profile encoder + emotion encoder + parsing; individual CPU history/vectorization/prediction time added; CPU executed before GPU phase; model loading excluded",
+    "official_10_point_score": null
+  }
+}

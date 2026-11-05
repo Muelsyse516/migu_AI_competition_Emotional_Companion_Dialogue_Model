@@ -1,0 +1,7 @@
+{
+  "baseline_ms": 4757.768945846085,
+  "candidate_ms": 4896.052742920196,
+  "speedup_percent": -2.906484082099925,
+  "passed": false,
+  "quality_status": "pending, quantization can alter replies"
+}

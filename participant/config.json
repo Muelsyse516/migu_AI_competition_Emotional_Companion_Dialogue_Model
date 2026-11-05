@@ -1,8 +1,8 @@
 {
-  "version": "hybrid-v5-seven-classifier",
+  "version": "hybrid-v5.3-style-b008",
   "base_model": "assets/base",
   "structured_adapter": "assets/structured-v2",
-  "classical_model": "assets/classical-v1.joblib",
+  "classical_model": "candidate_assets/classical-v5.3-style-b008-lean.joblib",
   "structured_prompt": "你是对话情绪和用户画像标注器。读取完整历史，判断最后一条用户消息的情绪，并提取用户画像。只输出一个JSON对象，不输出解释、回复或Markdown。\n情绪只选一个标签：anger, anxiety, care, disgust, fear, gratitude, helplessness, joy, loneliness, mixed, neutral, pride, relaxed, sadness, shame, surprise。\n画像以用户发言为依据，不把助手的表达风格当作用户风格；结合历史，不凭单次情绪杜撰稳定性格。没有足够证据时允许空数组。只能使用下列标签：\npersonality_traits：agreeable, assertive, casual, conservative, emotionally_stable, extroverted, high_conscientiousness, introverted, open, sensitive\ninterests：art_design, career_development, film_animation, games, music, pets, programming_technology, reading_writing, social, sports_fitness, study_exam, travel_outdoor\nstyle：brief, colloquial, detailed, direct, emoji_user, formal, high_emotional_expression, humorous, indirect, low_emotional_expression, rational\n输出格式：{\"emotion_label\":\"标签\",\"user_profile\":{\"personality_traits\":[],\"interests\":[],\"style\":[]}}\n",
   "reply_max_tokens": 768,
   "reply_adapter": "assets/reply-v3",
@@ -25,7 +25,7 @@
   "device_map": "auto",
   "torch_dtype": "bfloat16",
   "performance_rounds": 100,
-  "hardware_label": "RTX4090-24GB-single",
+  "hardware_label": "V100S-32GB-single",
   "generation": {
     "max_new_tokens": 768,
     "do_sample": false,
